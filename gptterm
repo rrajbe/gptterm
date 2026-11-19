@@ -1,0 +1,4 @@
+#!/bin/sh
+# launcher: runs gptterm.py with the project venv
+here="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+exec "$here/.venv/bin/python" "$here/gptterm.py" "$@"
